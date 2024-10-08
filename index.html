@@ -24,9 +24,10 @@
         </div>
     </div>
 
-    <script>
-        // OpenWeatherMap API 키
-        const apiKey = 'e605708746ba5a95f84008158f224cb2';
+    <!-- config.js에서 API 키 불러오기 -->
+    <script type="module">
+        import { apiKey } from './config.js';
+
         const lat = 37.8813;  // 춘천의 위도
         const lon = 127.7298; // 춘천의 경도
         const weatherDiv = document.getElementById('weather');
